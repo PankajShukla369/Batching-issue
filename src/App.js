@@ -6,13 +6,19 @@ function App() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => response.json())
-    .then(json => {
-      setData(json);//This will cause immediate re-rendering of the component. React batching will not wait for setLoading call below.
+    // fetch('https://jsonplaceholder.typicode.com/todos/1')
+    // .then(response => response.json())
+    // .then(json => {
+    //   setData(json);//This will cause immediate re-rendering of the component. React batching will not wait for setLoading call below.
+    //   setLoading(false);
+    //   console.log(json);
+    // })
+
+    /*Below is an example in setTimeout where batching is not happening*/
+    setTimeout(() => {
+      setData({title: 'Hello Pankaj'});//This will cause immediate re-rendering of the component. React batching will not wait for setLoading call below.
       setLoading(false);
-      console.log(json);
-    })
+    }, 2000);
   }, []);
   return (
     <div className="App">
