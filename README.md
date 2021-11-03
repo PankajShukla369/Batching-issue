@@ -1,4 +1,4 @@
-This project shows React's state batching concept. In certain scenarios Reacts doesn't do state batching and re-renders the components. this may lead to some functional issues and perf issues.
+This project shows React's state batching concept. In certain scenarios Reacts doesn't do state batching and re-renders the components. This may lead to some functional issues and perf issues.
 
 ## Available Scripts
 
