@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project shows React's state batching concept. In certain scenarios Reacts doesn't do state batching and re-renders the components. this may lead to some functional issues and perf issues.
 
 ## Available Scripts
 
