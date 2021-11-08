@@ -23,7 +23,9 @@ function App() {
   return (
     <div className="App">
       {loading && "Loading..."}
-      {data?.title}  
+      <div className="data">
+        {data?.title}  
+      </div>
     </div>
   );
 }

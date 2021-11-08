@@ -6,6 +6,11 @@
   height: 500px;
 }
 
+.data {
+  color: red;
+  background-color: black;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
